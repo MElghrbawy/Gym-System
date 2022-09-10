@@ -8,7 +8,8 @@
 </p>
 
 ## Demo
-<video controls>
+
+<video width="320" height="240" controls>
   <source src="documentation\video\VID-20220910-WA00111.mp4" type="video/mp4">
 </video>
 
