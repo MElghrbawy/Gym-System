@@ -9,9 +9,8 @@
 
 ## Demo
 
-<video width="320" height="240" controls>
-  <source src="documentation\video\VID-20220910-WA00111.mp4" type="video/mp4">
-</video>
+https://user-images.githubusercontent.com/97922599/189485798-f3b83661-5dfa-44dd-834a-4a29de393d11.mp4
+
 
 ## Table of Contents (Optional)
 
