@@ -1,21 +1,11 @@
 # Gym System
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## Demo
-
-https://user-images.githubusercontent.com/97922599/189485798-f3b83661-5dfa-44dd-834a-4a29de393d11.mp4
-
-
-## Table of Contents (Optional)
+## Table of Contents
 
 -   [Gym System](#gym-app)
     -   [Description](#description)
+    -   [Demo](#demo)
     -   [Roles And Permissions](#roles-and-permissions)
     -   [Installation](#installation)
     -   [Usage](#usage)
@@ -25,6 +15,13 @@ https://user-images.githubusercontent.com/97922599/189485798-f3b83661-5dfa-44dd-
 ## Description
 
 A GYM System App that has 5 roles (Admin, City Manager, Gym Manager, Coach, User). Each one of them is granted to specific permissions.
+
+
+## Demo
+
+https://user-images.githubusercontent.com/97922599/189485798-f3b83661-5dfa-44dd-834a-4a29de393d11.mp4
+
+
 
 ## Roles And Permissions
 
