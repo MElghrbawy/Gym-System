@@ -5,6 +5,7 @@
 
 -   [Gym System](#gym-app)
     -   [Description](#description)
+    -   [ERD](#erd)
     -   [Demo](#demo)
     -   [Roles And Permissions](#roles-and-permissions)
     -   [Installation](#installation)
