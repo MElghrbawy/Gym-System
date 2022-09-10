@@ -43,6 +43,11 @@ https://user-images.githubusercontent.com/97922599/189485798-f3b83661-5dfa-44dd-
 5- `User` (API) :  
 &nbsp; &nbsp; &nbsp; &nbsp; Cann't access the system because it is for the administration only, but there is an endpoint (API) for the user.
 
+## ERD
+
+https://user-images.githubusercontent.com/97922599/189486177-266a227d-414b-4c0c-914a-20bc40b1e7e5.jpeg
+
+
 ## Installation
 
 ```bash
