@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Gym System
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -7,59 +7,144 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## Demo
+<video controls>
+  <source src="documentation\video\VID-20220910-WA00111.mp4" type="video/mp4">
+</video>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Table of Contents (Optional)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   [Gym System](#gym-app)
+    -   [Description](#description)
+    -   [Roles And Permissions](#roles-and-permissions)
+    -   [Installation](#installation)
+    -   [Usage](#usage)
+    -   [Libraries Used](#libraries-used)
+    -   [Contributors](#contributors)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Description
 
-## Learning Laravel
+A GYM System App that has 5 roles (Admin, City Manager, Gym Manager, Coach, User). Each one of them is granted to specific permissions.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Roles And Permissions
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1- `Admin` :  
+&nbsp; &nbsp; &nbsp; &nbsp; Admin will have access to everything in the system,he can see any links or make any action Gym Manager  
+&nbsp; &nbsp; &nbsp; &nbsp; and City Manager can do with these extra functionalities.
 
-## Laravel Sponsors
+2- `City Manager` :  
+&nbsp; &nbsp; &nbsp; &nbsp; City Manager can do what Gym Manager do with extra functionalities … like he can see all gyms in his city and  
+&nbsp; &nbsp; &nbsp; &nbsp; make CRUD on any gym or gym manager in his city.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+3- `Gym Managers` :  
+&nbsp; &nbsp; &nbsp; &nbsp; Gym Manager can CRUD training sessions and assign coaches to these sessions, also he can buy training  
+&nbsp; &nbsp; &nbsp; &nbsp; package for a user through stripe.
 
-### Premium Partners
+4- `coach` :  
+&nbsp; &nbsp; &nbsp; &nbsp; Can only see the sessions in which he trains.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+5- `User` (API) :  
+&nbsp; &nbsp; &nbsp; &nbsp; Cann't access the system because it is for the administration only, but there is an endpoint (API) for the user.
 
-## Contributing
+## Installation
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```bash
+git clone https://github.com/MElghrbawy/Gym-System.git
+cd Gym-System
+composer install
+```
 
-## Code of Conduct
+> Create Database
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```bash
+mysql -u root -p
+create Database gym_system
+```
 
-## Security Vulnerabilities
+> Update .env Database with your credentials
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+DB_DATABASE=gym_system
+DB_USERNAME=YOUR_USERNAME
+DB_PASSWORD=YOUR_PASSWORD
+```
 
-## License
+> Run Migration
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# Gym-System
+```bash
+php artisan migrate
+```
+
+## Usage
+
+> Run server
+
+```bash
+php artisan serve
+```
+
+> Open The Browser and go to
+
+```
+
+http://127.0.0.1:8000
+
+```
+
+## Libraries Used
+
+-   [Laravel](https://laravel.com/)
+-   [Admin LTE](https://adminlte.io/)
+-   [Laravel Sanctum](https://github.com/laravel/sanctum/)
+-   [Laravel Ban](https://github.com/cybercog/laravel-ban/)
+-   [Laravel Permissions](https://github.com/spatie/laravel-permission/)
+-   [Laravel UI](https://github.com/laravel/ui)
+
+## Contributors
+
+<table>
+  <tr>
+    <td>
+      <img src="https://avatars.githubusercontent.com/u/33490779?v=4" />
+    </td>
+    <td>
+      <img src="https://avatars.githubusercontent.com/u/97922599?v=4" />
+    </td>
+    <td>
+      <img src="https://avatars.githubusercontent.com/u/97697512?v=4" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/MohamedShehata15">Mohamed Shehata</a>
+    </td>
+      <td>
+      <a href="https://github.com/MElghrbawy">Mohamed Elghrbawy</a>
+    </td>
+     <td>
+      <a href="https://github.com/nadareffat98">Nada Reffat</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://avatars.githubusercontent.com/u/83234154?v=4" />
+    </td>
+    <td>
+      <img src="https://avatars.githubusercontent.com/u/97697351?v=4" />
+    </td>
+    <td>
+      <img src="https://avatars.githubusercontent.com/u/97316532?v=4" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/khloud44">Khloud Elsaid</a>
+    </td>
+      <td>
+      <a href="https://github.com/shoroukalkalla">Shorouk Alkalla</a>
+    </td>
+     <td>
+      <a href="https://github.com/YaraMohammed98">Yara Mohammed</a>
+    </td>
+  </tr>
+</table>
